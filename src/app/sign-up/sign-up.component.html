@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <header>
+        <nav class="main-nav">
+            <div class="row clearfix">
+                <a id="logo" href="#">Lets<span>Shaadi</span></a>
+                <ul class="right-nav ml-auto">
+                    <li><a class="sign-in" href="#">Login</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">About Us</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="jumbotron text-center">
+            <h1>
+                We bring you serious profiles!!
+            </h1>
+            <!-- <div class="hero-text-box"> -->
+
+            <form class="form-inline">
+                <div class="input-group">
+                    <div class="btn-group">
+                        <button id="partner-choice" type="button" class="btn-primary dropdown-toggle" aria-haspopup="true" data-bs-toggle="dropdown" aria-expanded="false">
+                            Partner Choice
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="partner-choice">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Separated link</a>
+                          </div>
+                    </div>
+
+                    <input type="email" class="form-control" size="20" placeholder="Email Address" required>
+                    <input type="email" class="form-control" size="20" placeholder="Email Address" required>
+                    <input type="email" class="form-control" size="20" placeholder="Email Address" required>
+                    <input type="email" class="form-control" size="20" placeholder="Email Address" required>
+                    <input type="email" class="form-control" size="20" placeholder="Email Address" required>
+                </div>
+            </form>
+            <div class="recaptcha">
+                <form class="form-inline text-center" [formGroup]="signin">
+                    <recaptcha key="6LfI8tQaAAAAALNhvggWE0Sid8eVIC2LgO6NdtxI" formControlName="captcha"></recaptcha>
+                    <div class="input-group-btn">
+                        <button type="button" class="btn sign-up">Subscribe</button>
+                        <!-- <a class="btn sign-in" href="#">SIGN UP</a> -->
+                        <!-- <a class="btn" href="#">SIGN UP</a> -->
+                    </div>
+                </form>
+            </div>
+
+            <!-- </div> -->
+        </div>
+
+    </header>
+    <section class="section-info">
+        <!-- <div > -->
+        <h1>Our Features</h1>
+        <div class="row content mr-0 ml-0">
+            <div class="col-lg-3">
+                <div class="info-header">
+                    <h2 class="no-margin features-font">Profile-Pic</h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <img class="image" src="../../assets/img/testimonial-1.jpg" alt="">
+                        <blockquote class="msg">
+                            We mandate profile pics for every profile. We do encourage serious profiles only.
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="info-header">
+                    <h2 class="no-margin features-font">Verified Profiles</h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <img class="image" src="../../assets/img/testimonial-1.jpg" alt="">
+                        <blockquote class="msg">
+                            We mandate profile pics for every profile. We do encourage serious profiles
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="info-header">
+                    <h2 class="features-font">Mandatory Response</h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <img class="image" src="../../assets/img/testimonial-1.jpg" alt="">
+                        <blockquote class="msg">
+                            We value our users time and requests. We mandate response of the requests. The
+                            requests
+                            will be
+                            auto-cancelled in
+                            case no response is recieved. We also track response indicator and below a threshold
+                            your profile will get disabled.
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="info-header">
+                    <h2 class="no-margin features-font">Communication</h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 py-0 mt-0">
+                        <img class="image" src="../../assets/img/testimonial-1.jpg" alt="">
+                        <p class="msg">We appreciate communication once request is accepted. We provide report non-communication after acceptance.
+                            We may block habitual offendors based upon calculated score.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- </div> -->
+    </section>
+
+    <section class="section-testimonials"></section>
+
+    <div class="modal fade" id="darkModalForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog form-dark" role="document">
+            <!--Content-->
+            <div class="modal-content card card-image" style="background-image: url('https://mdbootstrap.com/img/Photos/Others/pricing-table%20(7).jpg');">
+                <div class="text-white rgba-stylish-strong py-5 px-5 z-depth-4">
+                    <!--Header-->
+                    <div class="modal-header text-center pb-4">
+                        <h3 class="modal-title w-100 white-text font-weight-bold" id="myModalLabel">
+                            <strong>SIGN</strong> <a class="green-text font-weight-bold"><strong> UP</strong></a>
+                        </h3>
+                        <button type="button" class="close white-text" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <!--Body-->
+                    <div class="modal-body">
+                        <!--Body-->
+                        <div class="md-form mb-5">
+                            <input type="email" id="Form-email5" class="form-control validate white-text">
+                            <label data-error="wrong" data-success="right" for="Form-email5">Your email</label>
+                        </div>
+
+                        <div class="md-form pb-3">
+                            <input type="password" id="Form-pass5" class="form-control validate white-text">
+                            <label data-error="wrong" data-success="right" for="Form-pass5">Your password</label>
+                            <div class="form-group mt-4">
+                                <input class="form-check-input" type="checkbox" id="checkbox624">
+                                <label for="checkbox624" class="white-text form-check-label">Accept the<a href="#" class="green-text font-weight-bold">
+                                        Terms and Conditions</a></label>
+                            </div>
+                        </div>
+
+                        <!--Grid row-->
+                        <div class="row d-flex align-items-center mb-4">
+
+                            <!--Grid column-->
+                            <div class="text-center mb-3 col-md-12">
+                                <button type="button" class="btn btn-success btn-block btn-rounded z-depth-1">Sign
+                                    up</button>
+                            </div>
+                            <!--Grid column-->
+
+                        </div>
+                        <!--Grid row-->
+
+                        <!--Grid row-->
+                        <div class="row">
+
+                            <!--Grid column-->
+                            <div class="col-md-12">
+                                <p class="font-small white-text d-flex justify-content-end">Have an account? <a href="#" class="green-text ml-1 font-weight-bold">
+                                        Log in</a></p>
+                            </div>
+                            <!--Grid column-->
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!--/.Content-->
+        </div>
+    </div>
+    <!-- Modal -->
+
+
+
+    <div class="text-center">
+        <a href="" class="btn btn-default btn-rounded" data-toggle="modal" data-target="#darkModalForm">Launch modal
+            register Form</a>
+    </div>
+</body>
+
+</html>
+
+<!-- 6LfI8tQaAAAAALNhvggWE0Sid8eVIC2LgO6NdtxI -->
+<!-- 6LfI8tQaAAAAAASVgh04Bng7YOw-BwA_wyr4Mn1Y -->
+
+<!-- 6Ldz9tQaAAAAAOs7WVDYGjHtLzO9yQFHMte50DBk -->
+<!-- 6Ldz9tQaAAAAAFHZdOixUEcYjjMPwGjzWmlQlW9j -->
